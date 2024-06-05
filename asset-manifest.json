@@ -1,16 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.54980837.css",
-    "main.js": "/portfolio/static/js/main.068fdb87.js",
+    "main.css": "/portfolio/static/css/main.fb1aadc2.css",
+    "main.js": "/portfolio/static/js/main.fc7c287e.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/PhpMyAdmin.svg": "/portfolio/static/media/PhpMyAdmin.6a686089a43dce3f8db5.svg",
+    "static/media/Docker.svg": "/portfolio/static/media/Docker.1d41320cb0101dbbc6fe.svg",
+    "static/media/Debian.svg": "/portfolio/static/media/Debian.937bbc90d93ae21dedf4.svg",
+    "static/media/Postman.svg": "/portfolio/static/media/Postman.4f13d94619e491aa4cfa.svg",
+    "static/media/VS_Code.svg": "/portfolio/static/media/VS_Code.ae90970b7990088d824d.svg",
+    "static/media/PhpStorm.svg": "/portfolio/static/media/PhpStorm.88b83f62f0bb217b4a58.svg",
+    "static/media/IntelliJ.svg": "/portfolio/static/media/IntelliJ.af243ab5c3d878601b68.svg",
+    "static/media/Ubuntu.svg": "/portfolio/static/media/Ubuntu.19598217529d2acd420a.svg",
+    "static/media/Git.svg": "/portfolio/static/media/Git.c08353563539c6459b35.svg",
     "index.html": "/portfolio/index.html",
-    "main.54980837.css.map": "/portfolio/static/css/main.54980837.css.map",
-    "main.068fdb87.js.map": "/portfolio/static/js/main.068fdb87.js.map",
+    "static/media/Figma.svg": "/portfolio/static/media/Figma.2c2c9d7ff067a3272fbc.svg",
+    "static/media/Windows.svg": "/portfolio/static/media/Windows.c6bdcf3339e2ba9c67ed.svg",
+    "main.fb1aadc2.css.map": "/portfolio/static/css/main.fb1aadc2.css.map",
+    "main.fc7c287e.js.map": "/portfolio/static/js/main.fc7c287e.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54980837.css",
-    "static/js/main.068fdb87.js"
+    "static/css/main.fb1aadc2.css",
+    "static/js/main.fc7c287e.js"
   ]
 }
