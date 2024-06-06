@@ -4,7 +4,7 @@ import './index.css';
 
 const App = () => {
   return (
-    <div class="bg-lightBlue">
+    <div className="bg-lightBlue">
       <Competence />
     </div>
   );
