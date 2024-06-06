@@ -1,17 +1,20 @@
 import React from "react";
+import imagePaths from "../../imagePath"; // Assurez-vous que le chemin est correct
+
+const importImages = (folder) => {
+  const context = imagePaths[folder];
+  if (!context) {
+    console.error(`Folder '${folder}' not found in imagePaths`);
+    return [];
+  }
+  return context.keys().map((item, index) => ({
+    src: context(item),
+    alt: `Image ${index + 1}`,
+  }));
+};
 
 const Items = ({ folder }) => {
-  const importImages = (path) => {
-    const context = require.context("../../assets/logiciel", false, /\.(png|jpe?g|svg)$/);
-    return context.keys().map((item, index) => ({
-      src: context(item),
-      alt: `Image ${index + 1}`,
-    }));
-  };
-
-  const path = "../../assets/" + folder;
-  console.log(path === "../../assets/langage");
-  const images = importImages(path);
+  const images = importImages(folder);
 
   return (
     <div className="flex flex-wrap justify-center items-center p-4">
