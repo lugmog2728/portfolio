@@ -1,24 +1,32 @@
 import React from 'react';
 
-const Slide = ({ src, title, text, technos, isActive, totalSlides, currentSlide, setCurrentSlide }) => {
+const Slide = ({ src, title, text, technos, isActive, totalSlides, currentSlide, setCurrentSlide, repoUrl }) => {
   return (
-    <div className={`w-full flex justify-center items-center transition-opacity duration-700 ease-in-out ${isActive ? 'block' : 'hidden'}`}>
-      <div className="w-4/5 mx-auto flex flex-col items-center">
+    <div className={`w-full transition-opacity duration-700 ease-in-out ${isActive ? 'block' : 'hidden'}`}>
+      <div className="flex flex-col items-center">
         <div className="flex flex-row items-center">
-          <div className='w-1/2'>
-            <img src={src} className="block max-w-full h-auto" alt="Slide" />
-          </div>
+          <img src={src} className="block w-1/2 h-auto" alt="Slide" />
           <div className="w-1/2 p-4">
             <h2 className="text-2xl font-bold mb-2">{title}</h2>
             <p className="mb-4">{text}</p>
+            {repoUrl && (
+              <a
+                href={repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block px-6 py-2 text-white bg-blue-500 rounded-full hover:bg-blue-600"
+              >
+                Voir le code
+              </a>
+            )}
           </div>
         </div>
-        <div className="text-center p-4">
+        <div className="flex justify-center mt-4 space-x-2">
           {technos.map((techno, index) => (
             <img
               key={index}
               src={techno}
-              className="inline-block h-14 mx-2"
+              className="h-14 mx-2"
               alt={techno.match(/\/([^/]+)\.(png|jpe?g|svg)$/)[1].replace(/_/g, " ")}
             />
           ))}

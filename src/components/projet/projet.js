@@ -14,25 +14,29 @@ const Projet = () => {
       src: alter_ergo,
       title: 'Projet Alter Ergo',
       text: 'Description du projet Alter Ergo.',
-      techno: imagePath['projectTechno']['alter_ergo']
+      techno: imagePath['projectTechno']['alter_ergo'],
+      repoURL:""
     },
     {
       src: cap_etude,
       title: 'Projet Cap Étude',
       text: 'Description du projet Cap Étude.',
-      techno: imagePath['projectTechno']['cap_etude']
+      techno: imagePath['projectTechno']['cap_etude'],
+      repoURL:"https://github.com/"
     },
     {
       src: garage,
       title: 'Projet Garage',
       text: 'Description du projet Garage.',
-      techno: imagePath['projectTechno']['garage']
+      techno: imagePath['projectTechno']['garage'],
+      repoURL:"https://github.com/"
     },
     {
       src: voyo,
       title: 'Projet Voyo',
       text: 'Description du projet Voyo.',
-      techno: imagePath['projectTechno']['voyo']
+      techno: imagePath['projectTechno']['voyo'],
+      repoURL:"https://github.com/"
     }
   ];
 
@@ -59,6 +63,7 @@ const Projet = () => {
               totalSlides={slides.length}
               currentSlide={currentSlide}
               setCurrentSlide={setCurrentSlide}
+              repoUrl={slide.repoURL}
             />
           ))}
         </div>
