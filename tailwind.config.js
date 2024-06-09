@@ -16,6 +16,7 @@ module.exports = {
         lightGreen: '#38A3A5',
         lightPurple: '#a0A9F5', 
         orange: '#FFA800',
+        transitionBlue: '#507792'
       },
       boxShadow: {
         'itemShadow': '0px 4px rgba(0, 0, 0, 0.25)',
