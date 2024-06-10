@@ -31,21 +31,52 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-form">
-      <form ref={form} onSubmit={sendEmail}>
-        <label htmlFor="name">Name</label>
-        <input type="text" id="name" name="name" required />
-
-        <label htmlFor="email">Email</label>
-        <input type="email" id="email" name="email" required />
-
-        <label htmlFor="subject">Subject</label>
-        <input type="text" id="subject" name="subject" required />
-
-        <label htmlFor="message">Message</label>
-        <textarea id="message" name="message" required />
-
-        <button type="submit">Send</button>
+    <div className="contact-form flex justify-center items-center p-4">
+      <form ref={form} onSubmit={sendEmail} className="w-full max-w-3xl flex flex-col space-y-4">
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+          <div className="flex flex-col space-y-4 md:flex-1">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="votre nom"
+              required
+              className="mt-1 shadow-md block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Votre email"
+              required
+              className="mt-1 shadow-md block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            />
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="A propos de"
+              className="mt-1 shadow-md block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            />
+          </div>
+          <div className="flex flex-col space-y-4 md:flex-1">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Votre message"
+              required
+              className="mt-1 shadow-md block w-full h-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            />
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <button
+            type="submit"
+            className="inline-flex justify-center py-2 px-4 mt-5 border border-transparent shadow-md text-md font-medium rounded-full text-white bg-oceanblue hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
+            Envoyer
+          </button>
+        </div>
       </form>
     </div>
   );

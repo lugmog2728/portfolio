@@ -1,11 +1,10 @@
 import React from 'react';
 import Competence from './components/skill/Competence';
-import Copyright from './components/copyright/Copyright';
+import Copyright from './components/Copyright/Copyright';
 import Timeline from './components/timeline/Timeline';
 import Projet from './components/projet/projet';
 import Header from './components/header/header';
 import Contact from './components/contact/contact';
-import ContactForm from './components/contact/contactForm';
 import './index.css';
 
 const App = () => {
@@ -15,7 +14,7 @@ const App = () => {
       <Competence />
       <Timeline/>
       <Projet />
-      <ContactForm/>
+      <Contact />
       <Copyright firstname={"Gardanne"} name={"Lucas"} year={2024} />
     </div>
   );
