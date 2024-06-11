@@ -23,10 +23,10 @@ const ContactForm = () => {
     emailjs.send(serviceID, templateID, data, userID)
       .then((result) => {
           console.log(result.text);
-          alert('Email sent successfully!');
+          alert('Votre email a été transmis avec succès ! Je reviendrai vers vous rapidement.');
       }, (error) => {
           console.log(error.text);
-          alert('Failed to send email. Please try again later.');
+          alert("L'envoi a échoué. Merci de réessayer plus tard.");
       });
   };
 
