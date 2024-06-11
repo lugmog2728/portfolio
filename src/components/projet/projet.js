@@ -22,7 +22,7 @@ const Projet = () => {
       title: 'Projet Cap Étude',
       text: 'Description du projet Cap Étude.',
       techno: imagePath['projectTechno']['cap_etude'],
-      repoURL:"https://github.com/"
+      repoURL:""
     },
     {
       src: garage,

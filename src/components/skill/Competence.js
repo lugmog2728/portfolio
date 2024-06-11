@@ -4,10 +4,12 @@ import Category from './Category';
 
 const Competence = () => {
   return (
-    <div className="flex justify-around items-start p-5 gap-5">
-      <Category title={"Langages"} folder={"langage"} />
-      <Category title={"Frameworks"} folder={"framework"}/>
-      <Category title={"Logiciels"} folder={"logiciel"}/>
+    <div className="w-full flex justify-center">
+      <div className='w-10/12 flex justify-around items-start p-5 gap-5 '>
+        <Category title={"Langages"} folder={"langage"} />
+        <Category title={"Frameworks"} folder={"framework"}/>
+        <Category title={"Logiciels"} folder={"logiciel"}/>
+      </div>
     </div>
   );
 };

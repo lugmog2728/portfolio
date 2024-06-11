@@ -3,6 +3,49 @@ import Item from "./Item";
 import EtudeIcon from "../../assets/icon/etude.png";
 import ProIcon from "../../assets/icon/pro.png";
 
+const items = [
+  {
+    title: "Baccalauréat",
+    place: "Lycée Les Catalin, Montélimar (26)",
+    date: "Juin 2021",
+    text: "Obtention du baccalauréat avec mention Bien.",
+    tag: false,
+    icon: EtudeIcon,
+  },
+  {
+    title: "BUT Informatique",
+    place: "IUT de Valence (26)",
+    date: "Septembre 2021 à juillet 2024",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tag: false,
+    icon: EtudeIcon,
+  },
+  {
+    title: "Développeur full stack",
+    place: "Timberlee (Stage)",
+    date: "Avril à juin 2023",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tag: false,
+    icon: ProIcon,
+  },
+  {
+    title: "Chargé de projet informatiques",
+    place: "Realites Hospitality (Alternance)",
+    date: "Septembre 2023 à juillet 2024",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tag: false,
+    icon: ProIcon,
+  },
+  {
+    title: "MBA Développeur full stack",
+    place: "MyDigitalSchool Lyon",
+    date: "Septembre 2024 à juillet 2026",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    tag: true,
+    icon: EtudeIcon,
+  },
+];
+
 const Timeline = () => {
   return (
     <div className="container max-w-5xl px-4 py-12 mx-auto">
@@ -17,41 +60,17 @@ const Timeline = () => {
         </div>
         <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
           <ol className="relative border-s-4 border-oceanblue mx-8 mb-8">
-          <Item
-              title={"Baccalauréat"}
-              place={"Lycée Les Catalin, Montélimar (26)"}
-              date={"Juin 2021"}
-              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua."}
-              tag={false}
-              icon={EtudeIcon}/>
-            <Item
-              title={"BUT Informatique"}
-              place={"IUT de Valence (26)"}
-              date={"Septembre 2021 à juillet 2024"}
-              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua."}
-              tag={false}
-              icon={EtudeIcon}/>
-            <Item
-              title={"Développeur full stack"}
-              place={"Timberlee (Stage)"}
-              date={"Avril à juin 2023"}
-              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua."}
-              tag={false}
-              icon={ProIcon}/>
-            <Item
-              title={"Chargé de projet informatiques"}
-              place={"Realites Hospitality (Alternance)"}
-              date={"Septembre 2023 à juillet 2024"}
-              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua."}
-              tag={false}
-              icon={ProIcon}/>
-            <Item
-              title={"MBA Développeur full stack"}
-              place={"MyDigitalSchool Lyon"}
-              date={"Septembre 2024 à juillet 2026"}
-              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua."}
-              tag={true}
-              icon={EtudeIcon}/>
+            {items.map((item, index) => (
+              <Item
+                key={index}
+                title={item.title}
+                place={item.place}
+                date={item.date}
+                text={item.text}
+                tag={item.tag}
+                icon={item.icon}
+              />
+            ))}
           </ol>
         </div>
       </div>

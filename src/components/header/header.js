@@ -8,7 +8,7 @@ import Me from '../../assets/autre/me.jpg';
 const Header = () => {
   return (
     <div className="relative">
-      <div className='w-full h-[40rem] bg-gradient-to-bl from-secondary via-transitionBlue/90 to-secondary bg-opacity-5'>
+      <div className='w-full h-[40rem] bg-gradient-to-bl from-secondary via-transitionBlue/95 to-secondary bg-opacity-5'>
         <div className="h-20 w-2/3 relative">
           <div className="h-full w-2/3 bg-lightGreen float-left"></div>
           <div className="h-full w-1/3 bg-gradient-to-r from-lightGreen to-transparent float-left"></div>
@@ -25,10 +25,11 @@ const Header = () => {
         
         <div className='h-[calc(40rem-5rem)] w-full flex'>
           <div className='flex items-center justify-center w-3/5 h-full'>
-            <div className='w-1/2'>
-              <h1 className='text-white text-4xl'>Salut, je suis Lucas Gardanne</h1>
+            <div className='w-3/5'>
+              <h1 className='text-white text-4xl'>Bonjour, je suis Lucas Gardanne</h1>
               <h2 className='text-white text-3xl'>Alternant développeur fullstack</h2>
-              <p className='text-white text-lg mt-4'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. </p>
+              <p className='text-white text-xl mt-4'>Bienvenue sur mon portfolio ! Passionné par le développement web et mobile, je vous présente ici mon travail et ma passion pour l'informatique.</p>
+              <p className='text-white text-xl mt-4'>N'hésitez pas à me contacter pour toute question ou opportunité. Merci de votre visite ! ✨</p>
               <div className='w-full flex mt-6'>
                 {/* Github */}
                 <div className="relative mr-4 group">
