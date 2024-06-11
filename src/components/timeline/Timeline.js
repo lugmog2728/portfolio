@@ -51,7 +51,7 @@ const Timeline = () => {
     <div id="timeline"className="container max-w-5xl px-4 py-12 mx-auto mt-16">
       <div className="flex flex-col sm:flex-row">
         <div className="sm:w-3/12">
-          <div className="sticky top-0 text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0">
+          <div className="sticky top-16 text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0">
             <h3 className="text-3xl font-semibold">Mes expériences</h3>
             <span className="text-sm font-bold tracking-wider uppercase">
               professionnelles et académiques

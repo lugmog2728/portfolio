@@ -22,14 +22,14 @@ const Projet = () => {
     {
       src: voyo,
       title: 'Voyo',
-      text: "Voyo est un projet universitaire d'application mobile réalisé dans le cadre de ma 3e année en BUT informatique. L'objectif est de mettre en relation deux utilisateurs afin de permettre aux personnes souhaitant déménager mais ne pouvant pas assister physiquement à la visite du bien immobilier de mandater quelqu'un pour faire la visite à leur place et leur faire un compte rendu.",
+      text: "Voyo est un projet universitaire d'application mobile réalisé dans le cadre de ma 3e année en BUT informatique. L'objectif est de mettre en relation deux utilisateurs afin de permettre aux personnes souhaitant déménager, mais ne pouvant pas assister physiquement à la visite du bien immobilier, de mandater quelqu'un pour faire la visite à leur place et leur faire un compte rendu.",
       techno: imagePath['projectTechno']['voyo'],
       repoURL:"https://github.com/lugmog2728/SAE5.01-Voyo"
     },
     {
       src: alter_ergo,
       title: 'Alter Ergo',
-      text: "Alter Egro est une plateforme de gestion de paie destinée aux intermittents du spectacle. J'ai notamment travaillé sur la mise en place d'un système de gestion de tâches asynchrones.",
+      text: "Alter Ergo est une plateforme de gestion de paie destinée aux intermittents du spectacle. J'ai notamment travaillé sur la mise en place d'un système de gestion de tâches asynchrones.",
       techno: imagePath['projectTechno']['alter_ergo'],
       repoURL:""
     },
