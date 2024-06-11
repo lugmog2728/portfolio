@@ -1,6 +1,6 @@
 import React from 'react';
 import Competence from './components/skill/Competence';
-import Copyright from './components/Copyright/Copyright';
+import Copyright from './components/copyright/Copyright';
 import Timeline from './components/timeline/Timeline';
 import Projet from './components/projet/projet';
 import Header from './components/header/header';

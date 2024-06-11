@@ -23,7 +23,7 @@ const imagePaths = {
         framework: require.context("./assets/framework", false, /\.(png|jpe?g|svg)$/),
         logiciel: require.context("./assets/logiciel", false, /\.(png|jpe?g|svg)$/),
         projectTechno: {alter_ergo: [Html, Css,  PHP, Js, Mysql, Twig, Boostrap, Symfony], 
-                        cap_etude: [Html, Css, Js, PHP, Api_platform, Ionic, Angular, Typescript ],
+                        cap_etude: [Html, Css, Js, PHP, Symfony, Api_platform, Twig, Ionic, Angular, Typescript ],
                         garage: [Html, Css, Js, PHP, Postgresql],
                         voyo: [Dart, Flutter, Aspnet, Postgresql]
         }

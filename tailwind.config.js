@@ -20,7 +20,10 @@ module.exports = {
       },
       boxShadow: {
         'itemShadow': '0px 4px rgba(0, 0, 0, 0.25)',
-      }
+      },
+      fontFamily: {
+        sans: ['inter', 'sans-serif'],
+      },
     },
   },
   plugins: [

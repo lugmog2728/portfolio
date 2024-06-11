@@ -15,7 +15,9 @@ const Item = ({date, title, place, icon, tag, text}) => {
         )}
         </h3>
         <time className="block mb-2 text-sm font-normal leading-none text-gray-400">{date}</time>
-        <p className="mb-4 text-base font-normal text-gray-500">{text}</p>
+        {text.split('<br/>').map((paragraph, index) => (
+          <p key={index} className="mb-1 text-base font-normal text-gray-500">{paragraph}</p>
+        ))}
     </li>
   );
 };

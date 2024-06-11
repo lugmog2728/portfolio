@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import SmoothScroll from 'smooth-scroll';
 import ContactIcon from '../../assets/icon/contact.svg';
 import GithubIcon from '../../assets/icon/GitHub_white.svg';
 import LinkedinIcon from '../../assets/icon/linkedin_white.svg';
@@ -6,17 +7,24 @@ import MailIcon from '../../assets/icon/mail_white.svg';
 import Me from '../../assets/autre/me.jpg';
 
 const Header = () => {
+  useEffect(() => {
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 800, // vitesse de défilement en millisecondes
+      speedAsDuration: true // définir la vitesse comme durée
+    });
+  }, []);
+
   return (
     <div className="relative">
       <div className='w-full h-[40rem] bg-gradient-to-bl from-secondary via-transitionBlue/95 to-secondary bg-opacity-5'>
         <div className="h-20 w-2/3 relative">
           <div className="h-full w-2/3 bg-lightGreen float-left"></div>
           <div className="h-full w-1/3 bg-gradient-to-r from-lightGreen to-transparent float-left"></div>
-          <div className='h-full w-2/3 flex items-center absolute top-0 left-0'>
-            <a href="#section1" className="text-white ml-5 text-2xl">Compétences</a>
-            <a href="#section2" className="text-white ml-5 text-2xl">Parcours</a>
-            <a href="#section3" className="text-white mx-5 text-2xl">Projets</a>
-            <a href="#section4" className="flex items-center text-lightGreen mx-5 p-2 text-2xl bg-white rounded-md">
+          <div className='h-full w-4/5 flex items-center absolute top-0 left-0'>
+            <a href="#competence" className="text-white ml-5 text-2xl">Compétences</a>
+            <a href="#timeline" className="text-white ml-5 text-2xl">Parcours</a>
+            <a href="#projet" className="text-white mx-5 text-2xl">Projets</a>
+            <a href="#contact" className="flex items-center text-lightGreen mx-5 p-2 text-2xl bg-white rounded-md">
               <img src={ContactIcon} alt="Contact" className="w-8 h-8 mr-2" />
               Contactez-moi
             </a>

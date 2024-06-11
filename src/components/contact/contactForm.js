@@ -39,9 +39,9 @@ const ContactForm = () => {
               type="text"
               id="name"
               name="name"
-              placeholder="votre nom"
+              placeholder="Votre nom"
               required
-              className="mt-1 shadow-md block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 shadow-md block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
             />
             <input
               type="email"
@@ -49,14 +49,14 @@ const ContactForm = () => {
               name="email"
               placeholder="Votre email"
               required
-              className="mt-1 shadow-md block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 shadow-md block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
             />
             <input
               type="text"
               id="subject"
               name="subject"
               placeholder="A propos de"
-              className="mt-1 shadow-md block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 shadow-md block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
             />
           </div>
           <div className="flex flex-col space-y-4 md:flex-1">
@@ -65,7 +65,7 @@ const ContactForm = () => {
               name="message"
               placeholder="Votre message"
               required
-              className="mt-1 shadow-md block w-full h-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              className="mt-1 shadow-md block w-full h-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
             />
           </div>
         </div>
