@@ -8,7 +8,7 @@ const items = [
     title: "Baccalauréat",
     place: "Lycée Les Catalin, Montélimar (26)",
     date: "Juin 2021",
-    text: "Obtention du baccalauréat STI2D option Système d'Information et Numerique avec mention Bien.",
+    text: "Obtention du baccalauréat STI2D option Systèmes d'Information et Numerique avec mention Bien.",
     tag: false,
     icon: EtudeIcon,
   },
@@ -29,7 +29,7 @@ const items = [
     icon: ProIcon,
   },
   {
-    title: "Chargé de projet informatiques",
+    title: "Chargé de projet informatique",
     place: "Realites Hospitality (Alternance)",
     date: "Septembre 2023 à juillet 2024",
     text: "Durant ma dernière année de BUT en alternance chez Realites Hospitality, j'ai participé à divers projets.<br/>Notamment, j'ai dirigé avec succès un projet de migration et d'amélioration de l'espace locataire vers une application mobile multiplateforme.<br/>Cette expérience m'a permis de renforcer mes compétences en développement web et mobile, ainsi qu'en gestion de projet.",
@@ -54,7 +54,7 @@ const Timeline = () => {
           <div className="sticky top-0 text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0">
             <h3 className="text-3xl font-semibold">Mes expériences</h3>
             <span className="text-sm font-bold tracking-wider uppercase">
-              professionnel et académique
+              professionnelles et académiques
             </span>
           </div>
         </div>
