@@ -10,9 +10,10 @@ const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line
     const scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 800, // vitesse de défilement en millisecondes
-      speedAsDuration: true // définir la vitesse comme durée
+      speed: 800,
+      speedAsDuration: true
     });
 
     const handleScroll = () => {
