@@ -61,7 +61,7 @@ const Contact = () => {
             </div>
             {/* CV */}
             <div className="relative mr-4 group">
-              <a href="/assets/CV_Gardanne_Lucas.pdf" download>
+              <a href="/portfolio/assets/CV_Gardanne_Lucas.pdf" download>
                 <img src={Cv} alt="CV" className="w-14 h-14" />
                 <span className="absolute top-full left-1/2 transform -translate-x-1/2 translate-y-2 bg-oceanblue text-white text-sm rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity"
                   style={{ whiteSpace: "nowrap" }}>
